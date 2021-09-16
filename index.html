@@ -19,7 +19,7 @@
   async function testDebug() {
   let txt = { type: "string", value: "text au singulier {n}" };
   let pluriel = { type: "string", value: "text au pluriel {n}" };
-  let nombre = { type: "number", value: 1 };
+  let nombre = { type: "number", value: -2 };
 //  let fit = { type: "string", value: 'cover' };
   let result = await window.function(txt, pluriel, nombre);
   document.getElementById("result").innerHTML = result;

@@ -36,16 +36,16 @@ window.function = function (txt, pluriel, nombre) {
   pluriel = pluriel.value ?? "";
   nombre = nombre.value ?? 0;
 
-  nombre = Math.abs(nombre);
+  let nb = Math.abs(nombre);
 
   let critere = 1;
-  if (typeof nombre == "boolean") {
+  if (typeof nb == "boolean") {
     critere = 0;
     // Convertion true,false en 1,0
-    nombre = nombre ? 1 : 0;
+    nb = nb ? 1 : 0;
   }
 
-  if (nombre > critere) {
+  if (nb > critere) {
     if (pluriel) {
       txt = pluriel;
     }
