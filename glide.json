@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "column",
+    "name": "Pluriel",
+    "description": "Ajoute un s au texte ou remplace le texte par son pluriel si le nombre est > critère.",
+    "author": "Manu.n",
+    "params": [
+      {
+        "name": "txt",
+        "displayName": "Texte avec {s} pour l'emplacement du s & en option {n} inclus le nombre",
+        "type": "string"
+      },
+      {
+        "name": "pluriel",
+        "displayName": "Option : texte au pluriel & en option {n} inclus le nombre",
+        "type": "string"
+      },
+      {
+        "name": "nombre",
+        "displayName": "nombre",
+        "type": "primitive"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
