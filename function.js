@@ -15,6 +15,8 @@
  * Détermine si accord au pluriel
  *
  * ===========================================================
+ * Révision 4
+ *  - Math.abs pour les nombre négatif
  * Révision 3
  *  - Suppression de critère
  *  - détection du critère en fonction du type de colonne
@@ -33,6 +35,8 @@ window.function = function (txt, pluriel, nombre) {
   txt = txt.value ?? "";
   pluriel = pluriel.value ?? "";
   nombre = nombre.value ?? 0;
+
+  nombre = Math.abs(nombre);
 
   let critere = 1;
   if (typeof nombre == "boolean") {
